@@ -10,23 +10,23 @@
 }
 .container {
   max-width: 1440px;
-  /* padding: 0em 5em; */
+  /* padding: 0rem 5rem; */
   background: rgb(3, 91, 102);
   font-family: var(--font-family);
   font-size: small;
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 #background {
   width: 100%;
   background: url("../images/pattern-bg.png");
-  height: 20em;
+  height: 20rem;
 }
 #map {
   /* outline: 2px solid rgb(233, 231, 231);
   background: yellow; */
   width: 100%;
-  height: calc(100vh - 16em);
+  height: calc(100vh - 10rem);
   z-index: 0;
 }
 .map-input-details {
@@ -36,36 +36,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3em;
-  margin: 0em auto;
+  gap: 3rem;
+  margin: 0rem auto;
   position: absolute;
   width: fit-content;
-  top: 2em;
+  top: 2rem;
   left: 0;
   right: 0;
   z-index: 1;
 }
 .app-title {
-  margin-top: 0em;
+  margin-top: 0rem;
   color: white;
   font-size: 30px;
   font-weight: lighter;
 }
 .address-input-area {
   display: flex;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   align-items: center;
-  height: 3em;
+  height: 3rem;
   box-sizing: border-box;
+  width: fit-content;
 }
 #input-box {
   height: 100%;
   border: none;
-  width: 26em;
-  border-radius: 1em 0em 0em 1em;
+  width: 26rem;
+  border-radius: 1rem 0rem 0rem 1rem;
   font-size: 12px;
-  padding-left: 1.5em;
-  /* padding: 2.4em; */
+  padding-left: 1.5rem;
+  /* padding: 2.4rem; */
 }
 
 #input-arrow {
@@ -73,10 +74,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5em;
+  width: 2.5rem;
   background: rgb(71, 70, 70);
   box-sizing: content-box;
-  border-radius: 0 1em 1em 0;
+  border-radius: 0 1rem 1rem 0;
 }
 #input-arrow:hover {
   cursor: pointer;
@@ -84,17 +85,17 @@
 }
 .address-details-window {
   display: flex;
-  padding: 2em 0em;
+  padding: 2rem 0rem;
   background: white;
   width: 100%;
   justify-content: space-between;
-  border-radius: 1em;
+  border-radius: 1rem;
 }
 .address-section {
-  padding-right: 4em;
+  padding-right: 4rem;
   text-align: left;
   border-right: 1px solid rgb(210, 206, 206);
-  padding-left: 2em;
+  padding-left: 2rem;
 }
 .section-header {
   font-size: 11px;
@@ -102,24 +103,24 @@
   letter-spacing: 1px;
 }
 .section-input {
-  margin-top: 0.5em;
-  max-width: 10em;
+  margin-top: 0.5rem;
+  max-width: 10rem;
 }
 #ip-isp {
-  max-width: 4em;
+  max-width: 4rem;
 }
 .error {
-  padding: 1em;
-  margin-top: 1em;
+  padding: 1rem;
+  margin-top: 1rem;
   color: red;
   background: white;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   position: absolute;
   width: fit-content;
-  top: 2em;
+  top: 2rem;
   right: 0;
   left: 0;
-  margin: 0em auto;
+  margin: 0rem auto;
   z-index: 1;
 }
 @media screen and (max-width: 940px) {
@@ -128,10 +129,10 @@
   }
   .address-details-window {
     flex-direction: column;
-    gap: 2em;
+    gap: 2rem;
     align-items: center;
-    padding: 2em 0em;
-    border-radius: 1em;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
   }
   .address-section {
     text-align: center;
@@ -140,15 +141,15 @@
   #input-box {
     border: none;
     width: 100%;
-    border-radius: 1em 0em 0em 1em;
+    border-radius: 1rem 0rem 0rem 1rem;
     outline: none;
     font-size: 12px;
-    padding-left: 1.5em;
+    padding-left: 1.2rem;
   }
   .section-input {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
     max-width: fit-content;
-    font-size: 1.2em;
+    font-size: 1.4rem;
   }
   #ip-isp {
     max-width: fit-content;
@@ -157,5 +158,10 @@
 @media screen and (max-width: 550px) {
   .map-input-details {
     width: 80%;
+  }
+  .section-input {
+    margin-top: 0.5rem;
+    max-width: fit-content;
+    font-size: 1rem;
   }
 }
