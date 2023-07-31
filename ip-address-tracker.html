@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./src/ip-address.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="background"></div>
+      <div id="map"></div>
+      <div class="map-input-details">
+        <h2 class="app-title">IP Address Tracker</h2>
+        <div class="address-input-area">
+          <input
+            type="text"
+            placeholder="enter ip address to track"
+            id="input-box"
+          />
+
+          <div id="input-arrow">
+            <img src="./images/icon-arrow.svg" alt="arrow" />
+          </div>
+        </div>
+        <div class="address-details-window">
+          <section class="address-section">
+            <h3 class="section-header">IP ADDRESS</h3>
+            <h2 class="section-input" id="ip-address">192.212.174.101</h2>
+          </section>
+          <section class="address-section">
+            <h3 class="section-header">LOCATION</h3>
+            <h2 class="section-input" id="ip-location">Brooklyn, NY 1001</h2>
+          </section>
+          <section class="address-section">
+            <h3 class="section-header">TIMEZONE</h3>
+            <h2 class="section-input" id="ip-timezone">UTC-05.00</h2>
+          </section>
+          <section class="address-section">
+            <h3 class="section-header">ISP</h3>
+            <h2 class="section-input" id="ip-isp">SpaceX Starlink</h2>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Michael</a>.
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <!-- <script type="module" src="./src/ip-fetch.js"></script> -->
+    <script type="module" src="./src/ip-address.js"></script>
+  </body>
+</html>
